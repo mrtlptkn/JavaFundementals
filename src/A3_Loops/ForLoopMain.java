@@ -7,11 +7,12 @@ public class ForLoopMain {
     public static void main(String[] args) {
 
         // for loop sample
-        for (int i = 1; i <= 5; i++) {
-            System.out.println("i = " + i);
-        }
+//        for (int i = 1; i <= 5; i++) {
+//            System.out.println("i = " + i);
+//        }
 
-        sample01();
+        // sample01();
+        NestedLoops();
 
     }
 
@@ -44,6 +45,33 @@ public class ForLoopMain {
 
     }
 
+
+    public  static  void NestedLoops() {
+
+        // excel satır sutun
+        // senaryo duvar örmek: yatayda 5 sıra tuğla var ve dikeyde ise 4 sıra tuğla var. Toplam kaç tuğla kullanılır?
+
+        int yatayTuglaSayisi = 5;
+        int dikeyTuglaSayisi = 4;
+
+        // i ve j değeri kaçıncı tuğlada olduğumuz bilgisini saklar. Döngü içerisindeki sıralama için
+        // kullandık.
+
+        // [5,5]
+
+        for (int i = 0; i < dikeyTuglaSayisi; i++) {
+
+            for (int j = 0; j < yatayTuglaSayisi; j++) {
+                System.out.print("[x]");
+            }
+
+            System.out.println(""); // bir sonraki satıra geç
+
+        }
+
+
+
+    }
 
 
 }
