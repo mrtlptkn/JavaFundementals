@@ -53,7 +53,6 @@ public class ForLoopMain {
 
         int yatayTuglaSayisi = 5;
         int dikeyTuglaSayisi = 4;
-
         // i ve j değeri kaçıncı tuğlada olduğumuz bilgisini saklar. Döngü içerisindeki sıralama için
         // kullandık.
 
@@ -66,12 +65,6 @@ public class ForLoopMain {
             }
 
             System.out.println(""); // bir sonraki satıra geç
-
         }
-
-
-
     }
-
-
 }
