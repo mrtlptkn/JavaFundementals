@@ -71,8 +71,13 @@ public class WhileLoopMain {
             // Seçim 0-4 arasında değilse uyarı ver
             if (secim < 0 || secim > 4) {
                 System.out.println("Geçersiz seçim! Lütfen 0-4 arası bir sayı girin.");
-                continue; // Döngünün başına dön
+                // continue; // Döngünün başına dön
+                break;
             }
+
+            // Not: switch case break case ifadesinin sonlanmasını sağlarken, döngüden çıkma gerçekleşmek
+            // ama if'in kendine ait bir break tanımı yok bu sebebple. döngü içerisinde çıkarız.
+            // 75. satır döngüden çıkar, 97,101,105,114 nolu satırlarda switch break uygulanır.
 
             // Çıkış seçeneği değilse işlemi yap
             if (secim != 0) {
